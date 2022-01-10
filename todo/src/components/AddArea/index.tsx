@@ -12,6 +12,7 @@ export const AddArea = ({onEnter}: Props) =>
     const handleKeyUp = (e: KeyboardEvent) => {
         if(e.code === 'Enter' && inputText !== ''){
         onEnter(inputText);
+        setInputText('');
     }
 
     }
